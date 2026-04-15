@@ -1,105 +1,139 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HECTOR Berber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<title>Zeren Güzellik Salonu</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-            color: white;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-        nav {
-            background: black;
-            padding: 15px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+    color: #333;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
 
-        nav a:hover {
-            color: red;
-        }
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .kutu {
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 20px;
-            width: 320px;
-            margin: 80px auto;
-            text-align: center;
-            box-shadow: 0 0 30px rgba(255,0,0,0.3);
-        }
+nav a:hover {
+    color: #e91e63;
+}
 
-        h1 {
-            color: #ff2e2e;
-        }
+/* ANA ALAN */
+.kutu {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
 
-        .btn {
-            background: linear-gradient(45deg, #00ff88, #00cc66);
-            color: black;
-            padding: 12px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+/* KART */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
 
-        .btn:hover {
-            transform: scale(1.1);
-        }
+/* BAŞLIK */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
 
-        @media (max-width: 600px) {
-            .kutu {
-                width: 90%;
-            }
+/* ALT BAŞLIK */
+h3 {
+    margin-top: 20px;
+    color: #555;
+}
 
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+/* BUTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #e91e63, #ff4081);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* WHATSAPP */
+.wp {
+    background: #25D366;
+}
+
+.wp:hover {
+    background: #1ebe5d;
+}
+
+/* MOBİL */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
+</style>
+
 </head>
-
 <body>
 
-    <nav>
-        <a href="#">Ana Sayfa</a>
-        <a href="hizmetler.html">Hizmetler</a>
-        <a href="iletisim.html">İletişim</a>
-    </nav>
+<nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Hizmetler</a>
+    <a href="#">İletişim</a>
+</nav>
 
-    <div class="kutu">
-        <h1>HECTOR Berber</h1>
+<div class="kutu">
+    <div class="card">
+        <h1>Zeren Güzellik Salonu</h1>
 
-        <h2>Hizmetlerimiz</h2>
-        <p>Saç kesimi</p>
-        <p>Sakal tıraşı</p>
-        <p>Cilt bakımı</p>
+        <h3>Hizmetlerimiz</h3>
+        <p>Saç Tasarım</p>
+        <p>Saç Boyama</p>
+        <p>Cilt Bakımı</p>
+        <p>Profesyonel Makyaj</p>
 
-        <h2>İletişim</h2>
-        <p>Telefon: 0533 032 84 04</p>
-        <p>Adres: İstanbul</p>
+        <h3>İletişim</h3>
+        <p>📞 0545 417 18 36</p>
+        <p>📞 0533 032 84 04</p>
+        <p>📍 Doğubeyazıt</p>
 
-        <a href="https://wa.me/905330328404" target="_blank" class="btn">
-            WhatsApp'tan Randevu Al
+        <a href="tel:05454171836" class="btn">📞 Hemen Ara</a>
+
+        <a href="https://wa.me/905454171836" class="btn wp">
+            WhatsApp’tan Randevu Al
         </a>
     </div>
+</div>
 
 </body>
 </html>
