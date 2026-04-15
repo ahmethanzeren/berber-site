@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Berber Sitesi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HECTOR Berber</title>
 
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <style>
         body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
             color: white;
+        }
+
+        nav {
+            background: black;
+            padding: 15px;
             text-align: center;
-            font-family: 'Poppins', sans-serif;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: red;
         }
 
         .kutu {
@@ -19,7 +38,8 @@
             padding: 30px;
             border-radius: 20px;
             width: 320px;
-            margin: 100px auto;
+            margin: 80px auto;
+            text-align: center;
             box-shadow: 0 0 30px rgba(255,0,0,0.3);
         }
 
@@ -34,16 +54,35 @@
             border-radius: 8px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn:hover {
             transform: scale(1.1);
         }
+
+        @media (max-width: 600px) {
+            .kutu {
+                width: 90%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
+
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
 
     <div class="kutu">
         <h1>HECTOR Berber</h1>
@@ -57,7 +96,9 @@
         <p>Telefon: 0533 032 84 04</p>
         <p>Adres: İstanbul</p>
 
-        <a href="https://wa.me/905330328404" class="btn">WhatsApp'tan Randevu Al</a>
+        <a href="https://wa.me/905330328404" target="_blank" class="btn">
+            WhatsApp'tan Randevu Al
+        </a>
     </div>
 
 </body>
