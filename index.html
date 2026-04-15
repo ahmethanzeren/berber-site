@@ -3,137 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Zeren Güzellik Salonu</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 <style>
+
 body {
-    margin: 0;
+    margin:0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fff0f5, #ffe4e1);
-    color: #333;
+    background:#fff;
+    color:#111;
 }
 
 /* NAVBAR */
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:black;
+    color:white;
 }
 
 nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
 }
 
-nav a:hover {
-    color: #e91e63;
+/* HERO */
+.hero {
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('gelin1.jpeg');
+    background-size:cover;
+    color:white;
 }
 
-/* ANA ALAN */
-.kutu {
-    margin-top: 120px;
-    text-align: center;
-    padding: 20px;
+.hero h1 {
+    font-size:40px;
 }
 
-/* KART */
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    width: 350px;
-    margin: auto;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-}
-
-/* BAŞLIK */
-h1 {
-    font-family: 'Playfair Display', serif;
-    color: #e91e63;
-    margin-bottom: 10px;
-}
-
-/* ALT BAŞLIK */
-h3 {
-    margin-top: 20px;
-    color: #555;
-}
-
-/* BUTON */
 .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: linear-gradient(45deg, #e91e63, #ff4081);
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    margin-top:20px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    display:inline-block;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+/* GALERİ */
+.gallery {
+    padding:50px;
+    text-align:center;
 }
 
-/* WHATSAPP */
-.wp {
-    background: #25D366;
+.gallery h2 {
+    margin-bottom:30px;
 }
 
-.wp:hover {
-    background: #1ebe5d;
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
 }
 
-/* MOBİL */
-@media (max-width: 600px) {
-    .card {
-        width: 90%;
-    }
+.grid img {
+    width:100%;
+    border-radius:10px;
 }
+
+/* VİDEO */
+.video {
+    padding:50px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer {
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
 </style>
-
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
-    <a href="#">Ana Sayfa</a>
-    <a href="#">Hizmetler</a>
-    <a href="#">İletişim</a>
+    <div><b>Zeren Güzellik Salonu</b></div>
+    <div>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Galeri</a>
+        <a href="#">İletişim</a>
+    </div>
 </nav>
 
-<div class="kutu">
-    <div class="card">
-        <h1>Zeren Güzellik Salonu</h1>
-
-        <h3>Hizmetlerimiz</h3>
-        <p>Saç Tasarım</p>
-        <p>Saç Boyama</p>
-        <p>Cilt Bakımı</p>
-        <p>Profesyonel Makyaj</p>
-
-        <h3>İletişim</h3>
-        <p>📞 0545 417 18 36</p>
-        <p>📞 0533 032 84 04</p>
-        <p>📍 Doğubeyazıt</p>
-
-        <a href="tel:05454171836" class="btn">📞 Hemen Ara</a>
-
-        <a href="https://wa.me/905454171836" class="btn wp">
-            WhatsApp’tan Randevu Al
-        </a>
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Doğubeyazıt’ın En Lüks Gelin Saçı & Makyaj</h1>
+        <a class="btn" href="https://wa.me/905454171836">Randevu Al</a>
     </div>
-</div>
+</section>
+
+<!-- GALERİ -->
+<section class="gallery">
+    <h2>Gelinlerimiz</h2>
+
+    <div class="grid">
+        <img src="gelin1.jpeg">
+        <img src="gelin2.jpeg">
+        <img src="gelin3.jpeg">
+        <img src="gelin4.jpeg">
+        <img src="gelin5.jpeg">
+        <img src="gelin6.jpeg">
+    </div>
+</section>
+
+<!-- VİDEO -->
+<section class="video">
+    <h2>Video</h2>
+    <video width="80%" controls>
+        <source src="gelin7.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- İLETİŞİM -->
+<section class="gallery">
+    <h2>İletişim</h2>
+    <p>📍 Doğubeyazıt</p>
+    <p>📞 0545 417 18 36</p>
+    <p>📞 0533 032 84 04</p>
+
+    <a class="btn" href="https://wa.me/905454171836">WhatsApp'tan Yaz</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Zeren Güzellik Salonu
+</footer>
 
 </body>
 </html>
