@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benim İlk Sitem</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }.kutu {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px red;
+}button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}button {
+    transition: 0.3s;
+}.btn {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: darkgreen;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+
+@media (max-width: 600px) {
+    .kutu {
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+        h1 {
+            color: red;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+  
+</head>
+<body>
+<nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="iletisim.html">İletişim</a>
+</nav>
+    <div class="kutu">
+
+        <h1>Elite Berber</h1>
+
+        <h2>Hizmetlerimiz</h2>
+        <p>Saç kesimi</p>
+        <p>Sakal tıraşı</p>
+        <p>Cilt bakımı</p>
+
+        <h2>İletişim</h2>
+        <p>Telefon: 0533 032 84 04</p>
+        <p>Adres: İstanbul</p>
+
+        <a href="https://wa.me/905330328404" target="_blank" class="btn">
+    WhatsApp'tan Randevu Al
+</a>
+
+    </div>
+
+</body>
