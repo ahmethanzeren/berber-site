@@ -1,89 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Benim İlk Sitem</title>
+    <title>Berber Sitesi</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: black;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
             color: white;
             text-align: center;
-        }.kutu {
-    background-color: #111;
-    padding: 30px;
-    border-radius: 15px;
-    width: 300px;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 0px 20px red;
-}button:hover {
-    background-color: darkred;
-    transform: scale(1.1);
-}button {
-    transition: 0.3s;
-}.btn {
-    background: green;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: darkgreen;
-}
-
-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: black;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: red;
-
-@media (max-width: 600px) {
-    .kutu {
-        width: 90%;
-        margin-top: 50px;
-    }
-}
-        h1 {
-            color: red;
+            font-family: 'Poppins', sans-serif;
         }
 
-        p {
-            font-size: 20px;
+        .kutu {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            width: 320px;
+            margin: 100px auto;
+            box-shadow: 0 0 30px rgba(255,0,0,0.3);
+        }
+
+        h1 {
+            color: #ff2e2e;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #00ff88, #00cc66);
+            color: black;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
         }
     </style>
-  
 </head>
-<body>
-<nav>
-    <a href="#">Ana Sayfa</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="iletisim.html">İletişim</a>
-</nav>
-    <div class="kutu">
 
-        <h1>Elite Berber</h1>
+<body>
+
+    <div class="kutu">
+        <h1>HECTOR Berber</h1>
 
         <h2>Hizmetlerimiz</h2>
         <p>Saç kesimi</p>
@@ -94,10 +57,8 @@ nav a:hover {
         <p>Telefon: 0533 032 84 04</p>
         <p>Adres: İstanbul</p>
 
-        <a href="https://wa.me/905330328404" target="_blank" class="btn">
-    WhatsApp'tan Randevu Al
-</a>
-
+        <a href="https://wa.me/905330328404" class="btn">WhatsApp'tan Randevu Al</a>
     </div>
 
 </body>
+</html>
